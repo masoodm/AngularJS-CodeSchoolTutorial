@@ -2,13 +2,24 @@
 	var app = angular.module('store', []);
 
 	app.controller('StoreController', function(){
-		this.product = gem;
+		this.product = gems;
 	});
 
-	var gem = {
+	var gems = [
+	{
 		name: "Diamond",
 		price: "299.95",
-		description: "This is one of the most expensive gems you can buy"
+		description: "This is one of the most expensive gems you can buy",
+		canPurchase: "true",
+		soldOut: "false"
+	},
+	{
+		name: "Ruby",
+		price: "249.95",
+		description: "This is one of the most expensive gems you can buy, but less expensive than a diamond",
+		canPurchase: "true",
+		soldOut: "false"
 	}
+	];
 
 })();
