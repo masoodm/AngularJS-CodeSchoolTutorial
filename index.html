@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 </head>
 <body>
+	<div ng-controller="StoreController as store">
+		<h1>{{store.product.name}}</h1>
+		<h2>${{store.product.price}}</h2>
+		<h3>{{store.product.description}}</h3>
+	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
-	<p>{{"hello" + " you"}}</p>
-
 </body>
 </html>
