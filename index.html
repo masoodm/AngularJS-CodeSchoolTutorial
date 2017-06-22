@@ -17,13 +17,13 @@
 				<section ng-controller="TabController as panel">
 					<ul class="nav nav-pills" >
 						<li ng-class="{ active:panel.isSelected(1)}">
-							<li><a href ng-click="panel.selectTab(1)">Description</li>
+							<li><a href ng-click="panel.selectTab(1)">Description</a></li>
 						</li>
 						<li ng-class="{ active:panel.isSelected(2)}">
-							<li><a href ng-click="panel.selectTab(2)">Price</li>
+							<li><a href ng-click="panel.selectTab(2)">Price</a></li>
 						</li>
 						<li ng-class="{ active:panel.isSelected(3)}">
-							<li><a href ng-click="panel.selectTab(3)">Photos</li>
+							<li><a href ng-click="panel.selectTab(3)">Photos</a></li>
 						</li>						
 					</ul>
 				<div class="panel" ng-show="panel.isSelected(1)">
@@ -33,22 +33,37 @@
 					{{product.price}}
 				</div>
 				<div class="panel" ng-show="panel.isSelected(3)">
+					<!-- <div class = 'gallery' ng-show="product.images.length">
+						<div class="img-wrap">
+							<img ng-src="{{product.images[]}}">
+						</div>
+					</div> -->
 					<div ng-repeat="image in product.images" id="imageHolder">
 						<img ng-src="{{image}}">
 					</div>
 				</div>
 				</section>
-
 				<p></p>
 				<button ng-show={{product.canPurchase}}>Add To Cart</button>
 		</div>
 	</div>
-	<form name="reviewMasoodForm">
-		<blockquote>
-			
-
-		</blockquote>
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
+
+
+      <!-- Image Gallery  -->
+     <!--  <div class='gallery' ng-controller="GalleryController as gallery"  ng-show="product.images.length">
+        <div class="img-wrap">
+          <img ng-src="{{product.images[gallery.current]}}" />
+        </div>
+        <ul class="img-thumbnails clearfix">
+          <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+            <img ng-src="{{image}}" />
+          </li>
+        </ul>
+      </div>
+ -->
+      
