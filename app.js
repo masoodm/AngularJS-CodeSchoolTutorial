@@ -5,9 +5,24 @@
 		this.product = gems;
 	});
 
+	app.controller('TabController', function(){
+		console.log('hello');
+		this.tab = 1;
+		this.selectTab = function(setTab) {
+			this.tab = setTab;
+		};
+
+		this.isSelected = function(checkTab) {
+			return this.tab === checkTab;
+		}
+
+		this.product = gems;
+	})
+
 	var gems = [
 	{
 		name: "Individual",
+		icon: "icons/124296-200.png",
 		price: "60/Hr",
 		description: "Individual shoots with unlimited outfit changes",
 		canPurchase: "true",
@@ -26,6 +41,7 @@
 	},
 	{
 		name: "Group",
+		icon: "icons/download.png",
 		price: "$60/Hr + $10/Person",
 		description: "Group shots with unlimited outfit changes",
 		canPurchase: "true",
