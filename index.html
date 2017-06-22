@@ -26,18 +26,19 @@
 							<li><a href ng-click="panel.selectTab(3)">Photos</li>
 						</li>						
 					</ul>
-				</section>
-				<div class="panel" ng-show="tab === 1">
+				<div class="panel" ng-show="panel.isSelected(1)">
 					{{product.description}}
 				</div>
-				<div class="panel" ng-show="tab === 2">
+				<div class="panel" ng-show="panel.isSelected(2)">
 					{{product.price}}
 				</div>
-				<div class="panel" ng-show="tab ===3">
+				<div class="panel" ng-show="panel.isSelected(3)">
 					<div ng-repeat="image in product.images" id="imageHolder">
 						<img ng-src="{{image}}">
 					</div>
 				</div>
+				</section>
+
 				<p></p>
 				<button ng-show={{product.canPurchase}}>Add To Cart</button>
 		</div>
