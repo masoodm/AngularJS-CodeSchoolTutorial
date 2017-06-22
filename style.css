@@ -1,0 +1,16 @@
+img {
+	width: 50%;
+	/*width: 100px;*/
+	padding: 10px;
+}
+
+#photoContainer{
+	display: flex;
+	flex-direction: column;
+}
+#imageHolder{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+

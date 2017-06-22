@@ -7,18 +7,35 @@
 
 	var gems = [
 	{
-		name: "Diamond",
-		price: "299.95",
-		description: "This is one of the most expensive gems you can buy",
+		name: "Individual",
+		price: "60/Hr",
+		description: "Individual shoots with unlimited outfit changes",
 		canPurchase: "true",
-		soldOut: "false"
+		soldOut: "false",
+		images: [
+			"individual/DSC_002.jpg", 
+			"individual/DSC_0049.jpg", 
+			"individual/DSC_0113.jpg", 
+			"individual/DSC_0164.jpg", 
+			"individual/DSC_0299.jpg", 
+			"individual/DSC_0383.jpg",
+			"individual/DSC_0986.jpg", 
+			"individual/DSC_0991.jpg",
+			"individual/File_000.jpeg"
+		]
 	},
 	{
-		name: "Ruby",
-		price: "249.95",
-		description: "This is one of the most expensive gems you can buy, but less expensive than a diamond",
+		name: "Group",
+		price: "$60/Hr + $10/Person",
+		description: "Group shots with unlimited outfit changes",
 		canPurchase: "true",
-		soldOut: "false"
+		soldOut: "false",
+		images: [
+			"group/DSC_0980.jpg",
+			"group/DSC_0436.jpg",
+			"group/DSC_0009.jpg", 
+			"group/DSC_0011.jpg"			
+		]
 	}
 	];
 
